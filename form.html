@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+
+    <div>
+        <form id="from1" align="left" >
+            <!-- input text name -->
+          <label for="name">ชื่อ-นามสกุล</label>
+          <input type="text" id="textname" placeholder="ป้อนชื่อ-นามสกุล"
+          autofocus="autofocus" maxlength="50" required>
+          <br>
+
+          <!--input text adress -->
+          <label for="adress">ที่อยู่</label>
+          <input type="text" id="adress" placeholder="ป้อนที่อยู่ปัจจุบัน"
+          maxlength="100" required>
+          <br>
+
+          <!-- input birtday -->
+          <label for="birtday">วันเกิด</label>
+          <input type="date" id="birtday" placeholder="เลือกวันเกิด">
+          <br>
+
+          <!-- input sex selection -->
+          <label for="sex">เพศ</label>
+          <select name="sex" id="sex">
+              <option value="ชาย" selected>ชาย</option>
+              <option value="หญิง" >หญิง</option>
+              <option value="LGBT" >LGBT</option>
+              <br>
+
+              <!-- input number age -->
+              <label for="age">ป้อนอายุ</label>
+              <input type="number" id="age" maxlength="3"
+              placeholder="เลือกอายุ">
+              <br>
+
+              <h2 align="center">ความสามารถพิเศษ</h2>
+            <br>
+            <input type="checkbox" id="dance" title="dance" value="dance" /> dance <br>
+            <input type="checkbox" id="music" title="music" value="music" /> music <br>
+            <input type="checkbox" id="e-sports" title="e-sports" value="e-sports" /> e-sports <br>
+            <input type="checkbox" id="eat" title="eat" value="eat" /> eat<br>
+
+            <br><br>
+
+            <!-- button submit -->
+            <button type="submit">บันทึก</button>
+            <button type="cancle">ยกเลิก</button>
+
+              
+          </select>
+        </form>
+    </div>
+</body>
+</html>
